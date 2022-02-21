@@ -1,5 +1,5 @@
 ## Exercises to beginner
-```js
+```js  
 // Declarar uma variável chamada `myvar`, sem valor.
 ?
 
@@ -38,4 +38,12 @@
 
 // Invoque a função criada acima, passando os parâmetros 10 e 2.
 ?
+
+// convert string in binary
+Array
+  .from('Davi')
+  .reduce((acc, char) => acc.concat(char.charCodeAt().toString(2)), [])
+  .map(bin => '0'.repeat(8 - bin.length) + bin )
+  .join(' ')
+
 ```
